@@ -383,3 +383,60 @@ footer .illustr3 {
     transform: rotate(340deg);
     z-index: -1;
 }
+
+.desktop-hide {
+    display: none;
+}
+
+@media screen and (max-width: 420px) {
+    .mobile-hide {
+        display: none;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    nav .right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: absolute;
+        right: -250px;
+        background-color: white;
+        height: 250px;
+        width: 150px;
+        padding: 10px 20px;
+        z-index: 3;
+        gap: .5em;
+    }
+
+    nav .right h1 {
+        font-size: 25px;
+        justify-self: flex-end;
+        align-self: flex-end;
+        border: 1px solid black;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    nav .right.active {
+        top: 20px;
+        right: 0px;
+        bottom: -10px;
+        transition: background-color 100s ease;
+    }
+
+    nav .right ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    nav .desktop-hide {
+        display: block;
+        height: 45px;
+    }
+}
