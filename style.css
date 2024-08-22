@@ -63,3 +63,80 @@ button {
     font-size: 14px;
     text-transform: uppercase;
 }
+
+.hero-cont {
+    background-color: hsl(256, 26%, 20%);
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.hero {
+    color: white;
+    padding-top: 0px;
+    position: relative;
+    height: 100%;
+}
+
+.hero .left {
+    width: 50%;
+    height: 100%;
+    padding-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.hero .left .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.hero .left .text hr {
+    width: 50%;
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+
+.hero .left h1 {
+    font-size: 47px;
+    font-weight: 700;
+    width: 85%;
+}
+
+.hero button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+}
+
+.hero .right {
+    width: 50%;
+}
+
+.hero img {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    bottom: -20%;
+}
+
+.diff-cont {
+    margin-top: 150px;
+}
