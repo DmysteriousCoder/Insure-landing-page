@@ -199,3 +199,70 @@ button {
     color:  hsl(273, 4%, 51%);
     line-height: 22px;
 }
+
+.cta-cont {
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(256, 26%, 20%);
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.cta .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta .txt h2 {
+    font-size: 45px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+    top: 0;
+    left: 0;
+    padding-left: 40px;
+    color: white;
+}
+
+.cta .butn {
+    display: flex;
+    justify-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    height: 100%;
+    width: 40%;
+}
+
+.cta button {
+    border: 1.5px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.illustr2 {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
