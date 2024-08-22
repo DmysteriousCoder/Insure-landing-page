@@ -266,3 +266,66 @@ button {
     bottom: 0;
     right: 0;
 }
+
+.footer-cont {
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 98%);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 40px 0;
+}
+
+footer .top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: .7px solid hsl(273, 4%, 51%);
+    padding-bottom: 25px;
+}
+
+footer .bottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 50px;
+    gap: 5em;
+}
+
+footer .bottom .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5em;
+}
+
+footer .bottom .col h5 {
+    font-size: 20px;
+    color: hsl(273, 4%, 51%);
+    font-weight: 500;
+}
+
+footer .bottom ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style: none;
+    gap: .5em;
+}
+
+footer .bottom ul li a {
+    color: hsl(256, 26%, 20%);
+    font-size: 14px;
+}
