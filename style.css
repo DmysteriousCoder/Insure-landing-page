@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Karla", sans-serif;
 }
 
 .nav-cont {
@@ -49,6 +50,14 @@ a {
     color: inherit;
 }
 
+nav a {
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: hsl(270, 9%, 17%);
+}
+
 a, 
 button {
     letter-spacing: .05em;
@@ -56,12 +65,17 @@ button {
 
 button {
     border: 1px solid hsl(270, 9%, 17%);
-    padding: 10px;
+    padding: 10px 20px;
     background: transparent;
     color: hsl(270, 9%, 17%);
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
+}
+
+nav button:hover {
+    background-color: hsl(270, 9%, 17%);
+    color: white;
 }
 
 .hero-cont {
@@ -114,7 +128,7 @@ button {
 }
 
 .hero .left h1 {
-    font-size: 47px;
+    font-size: 44px;
     font-weight: 700;
     width: 85%;
 }
@@ -124,6 +138,12 @@ button {
     border: 2px solid white;
     color: white;
     padding: 10px 20px;
+}
+
+.hero button:hover {
+    color: hsl(256, 26%, 20%);
+    background-color: white;
+    font-weight: 600;
 }
 
 .hero .right {
@@ -259,12 +279,19 @@ button {
     font-weight: 500;
 }
 
+.cta button:hover {
+    color: hsl(256, 26%, 20%);
+    background-color: white;
+    font-weight: 600;
+}
+
 .illustr2 {
     position: absolute;
     object-fit: cover;
     top: 0;
     bottom: 0;
     right: 0;
+    z-index: -1;
 }
 
 .footer-cont {
@@ -274,15 +301,26 @@ button {
     justify-content: center;
     align-items: center;
     background-color: hsl(0, 0%, 98%);
+    overflow: hidden;
 }
 
 footer {
+   position: relative;
+   width: 100%;
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 70%;
     padding: 40px 0;
+    z-index: 10;
 }
 
 footer .top {
@@ -291,6 +329,11 @@ footer .top {
     width: 100%;
     border-bottom: .7px solid hsl(273, 4%, 51%);
     padding-bottom: 25px;
+}
+
+footer .top .right img:hover {
+    color: hsl(270, 9%, 17%);
+    background-color: hsl(270, 9%, 17%);
 }
 
 footer .bottom {
@@ -328,4 +371,15 @@ footer .bottom ul {
 footer .bottom ul li a {
     color: hsl(256, 26%, 20%);
     font-size: 14px;
+    font-weight: 500;
+}
+
+footer .illustr3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 35%;
+    transform: rotate(340deg);
+    z-index: -1;
 }
