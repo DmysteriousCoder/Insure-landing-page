@@ -395,6 +395,7 @@ footer .illustr3 {
 
     nav {
         position: relative;
+        margin-bottom: 150px;
     }
 
     nav .right {
@@ -422,10 +423,19 @@ footer .illustr3 {
     }
 
     nav .right.active {
+        padding: 10px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 0;
         top: 20px;
-        right: 0px;
+        right: 0;
         bottom: -10px;
+        width: 100%;
         transition: background-color 100s ease;
+        
     }
 
     nav .right ul {
@@ -438,5 +448,48 @@ footer .illustr3 {
     nav .desktop-hide {
         display: block;
         height: 45px;
+    }
+
+    .hero-cont {
+        height: 1000px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+        width: 100%;
+    }
+
+    .hero .left {
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero .left hr {
+        display: none;
+        padding-bottom: 0;
+    }
+
+    .hero .left .text {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero .left .text h1 {
+        width: auto;
+        font-size: 40px;
+    }
+
+    .hero .right {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .hero .right img {
+        position: static;
+        width: 100%;
     }
 }
