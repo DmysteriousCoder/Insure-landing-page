@@ -389,13 +389,18 @@ footer .illustr3 {
 }
 
 @media screen and (max-width: 420px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
     .mobile-hide {
         display: none;
     }
 
     nav {
         position: relative;
-        margin-bottom: 150px;
+        margin-bottom: 10px;
     }
 
     nav .right {
@@ -459,6 +464,7 @@ footer .illustr3 {
         flex-direction: column-reverse;
         padding: 0;
         width: 100%;
+        gap: 1em;
     }
 
     .hero .left {
@@ -470,7 +476,7 @@ footer .illustr3 {
 
     .hero .left hr {
         display: none;
-        padding-bottom: 0;
+        margin-bottom: 0;
     }
 
     .hero .left .text {
@@ -491,5 +497,111 @@ footer .illustr3 {
     .hero .right img {
         position: static;
         width: 100%;
+    }
+
+    .diff .head hr {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        border: 1px solid hsl(256, 26%, 20%);
+    }
+
+    .diff .head h2 {
+        text-align: center;
+        font-size: 38px;
+    }
+
+    .diff .bottom {
+        flex-direction: column;
+    }
+
+    .diff .bottom .box {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .diff .bottom .box p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .cta {
+        height: 250px;
+    }
+
+    .cta .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cta .txt {
+        height: 20%;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        left: 0;
+        padding-right: 30px;
+        top: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cta .content h2 {
+        font-size: 23px;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        padding-left: 5px;
+    }
+
+    .cta .content .butn {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        right: 26%;
+        height: 83%;
+        width: 100%;
+    }
+
+    .illustr2 {
+        top: 0;
+        bottom: 0;
+    }
+
+    footer .top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+
+    footer .bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+
+    footer .bottom .col {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .bottom .col ul {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .col h5 {
+        font-size: 22px;
+        font-weight: 600;
     }
 }
